@@ -1,4 +1,4 @@
-# Built NuGet packages are staged here by scripts/publish-devkit.ps1; do not commit binaries.
+﻿# Built NuGet packages are staged here by scripts/publish-devkit.ps1; do not commit binaries.
 packages/*.nupkg
 packages/*.snupkg
 
@@ -19,3 +19,6 @@ packages/*.snupkg
 # OS
 .DS_Store
 Thumbs.db
+
+# Maintainer-only: lives in msmourao/polystack-devkit, not in this public fork
+scripts/
