@@ -22,3 +22,6 @@ Thumbs.db
 
 # Maintainer-only: lives in msmourao/polystack-devkit, not in this public fork
 scripts/
+
+# Maintainer-only: docs React app source; public site is docs/
+docs-page/
