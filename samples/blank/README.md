@@ -2,7 +2,7 @@
 
 Minimal PolyStack DevKit AppHost with **no ProjectReferences** to the private monorepo.
 
-## Packages (`0.1.0-preview.6`)
+## Packages (`0.1.0-preview.8`)
 
 - `PolyStack.Aspire.Hosting.Demo`
 - `PolyStack.Aspire.Hosting.Demo.SchemaExtraction`
@@ -23,3 +23,5 @@ Until you register modules, the catalog may be empty — that is expected.
 ## Docs
 
 See the [Development Guide + Architecture](https://getpolystack.github.io/devkit) ([markdown summary](https://github.com/getpolystack/devkit/blob/main/DevelopmentGuide.md)).
+
+Agents / LLMs: [LLM.md](../../LLM.md) and https://getpolystack.com/ai/getstarted.txt

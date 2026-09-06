@@ -1,6 +1,6 @@
-﻿# DevKit package list (nuget.org)
+# DevKit package list (nuget.org)
 
-Current train: **`0.1.0-preview.6`**
+Current train: **`0.1.0-preview.8`**
 
 ## DevKit shell
 
@@ -8,8 +8,8 @@ Current train: **`0.1.0-preview.6`**
 |---------|------|
 | `PolyStack.Aspire.Hosting.Demo.Abstractions` | Topology schema / validation / catalog types |
 | `PolyStack.Aspire.Hosting.Demo.Host` | Local host wiring (InMemory broker, SQLite, Auth.None) |
-| `PolyStack.Aspire.Hosting.Demo` | AppHost facade (`AsPolyStackDistributedApplicationBuilder`, scheme export, schema UI attach) |
-| `PolyStack.Aspire.Hosting.Demo.SchemaExtraction` | Read-only catalog UI on `:18889` (runnable `tools/` payload) |
+| `PolyStack.Aspire.Hosting.Demo` | AppHost facade (`AsPolyStackDistributedApplicationBuilder`, scheme on disk, Demo sidecar attach) |
+| `PolyStack.Aspire.Hosting.Demo.SchemaExtraction` | Demo wizard → simplified topology on `:18889` (runnable `tools/` payload) |
 | `PolyStack.Architecture.Testing` | Architecture convention tests (add from your `*.Tests` project) |
 
 > Assemblies remain named `Aspire.Hosting.PolyStackDemo*`. NuGet IDs use the `PolyStack.` vendor prefix because `Aspire.Hosting.*` is reserved on nuget.org.
@@ -51,6 +51,7 @@ Current train: **`0.1.0-preview.6`**
 | `PolyStack.Infrastructure.MessageBroker.Resources.Abstractions` |
 | `PolyStack.Infrastructure.ObjectStorage.Abstractions` |
 | `PolyStack.Infrastructure.ObjectStorage.Disabled` |
+| `PolyStack.Infrastructure.ObjectStorage.InMemory` |
 | `PolyStack.Infrastructure.Persistence.Abstractions` |
 | `PolyStack.Infrastructure.Persistence.Core` |
 | `PolyStack.Infrastructure.Persistence.DatabaseProvider.Abstractions` |
