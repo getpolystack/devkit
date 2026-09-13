@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-preview.9
+
+- nuget.org train refreshed (**obfuscated** via Dotfuscator Community)
+- Presentation/HTTP + Persistence increments since preview.8
+- `PolyStack.Architecture.Testing` remains Platform-only (not on the public DevKit allow-list)
+- Blank sample + Pages guides pinned to `0.1.0-preview.9`
+- Layer A `/ai` collection **2.6.1** (exampleTrain alignment)
+
 ## 0.1.0-preview.8
 
 - nuget.org train refreshed (**obfuscated** via Dotfuscator Community; a few assemblies still ship clear when CE cannot rewrite .NET 10 metadata)

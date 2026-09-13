@@ -1,4 +1,4 @@
-# polystack-devkit
+﻿# polystack-devkit
 
 Public **PolyStack DevKit** documentation, package metadata, and a nuget.org blank Aspire sample.
 
@@ -6,36 +6,36 @@ Use this repository to learn the DevKit surface, export `*.polystack-scheme.json
 
 | Artifact | Purpose |
 |----------|---------|
-| [Docs site](https://getpolystack.github.io/devkit) | **GitHub Pages** — Development Guide + Architecture (EN / PT-BR) |
+| [Docs site](https://getpolystack.github.io/devkit) | **GitHub Pages** â€” Development Guide + Architecture (EN / PT-BR) |
 | [DevelopmentGuide.md](./DevelopmentGuide.md) | Short markdown summary + pointer to the Pages site |
-| [LLM.md](./LLM.md) | **AI / LLM instructions** — where agents start (`getpolystack.com/ai`), identity, FETCH vs READING |
+| [LLM.md](./LLM.md) | **AI / LLM instructions** â€” where agents start (`getpolystack.com/ai`), identity, FETCH vs READING |
 | [PACKAGE.md](./PACKAGE.md) | Short README embedded in DevKit NuGet packages |
 | [PACKAGES.md](./PACKAGES.md) | Full public package list for this train |
 | [CHANGELOG.md](./CHANGELOG.md) | Train notes |
 | [samples/blank](./samples/blank) | Minimal Aspire AppHost restored from nuget.org |
 | `packages/` | Optional staging folder for Trusted Publishing / release assets (gitignored binaries) |
 
-Public brand (org): [github.com/getpolystack/devkit](https://github.com/getpolystack/devkit) · Maintainer SoT: this repo (`msmourao/polystack-devkit`). Both remotes stay public; sync brand with `scripts/publish-fork.ps1`.
+Public brand (org): [github.com/getpolystack/devkit](https://github.com/getpolystack/devkit) Â· Maintainer SoT: this repo (`msmourao/polystack-devkit`). Both remotes stay public; sync brand with `scripts/publish-fork.ps1`.
 
 ## Report issues
 
-**Prefer brand inbox:** [getpolystack/devkit/issues](https://github.com/getpolystack/devkit/issues) (org `getpolystack` — enable Issues in repo settings if disabled).
+**Prefer brand inbox:** [getpolystack/devkit/issues](https://github.com/getpolystack/devkit/issues) (org `getpolystack` â€” enable Issues in repo settings if disabled).
 
 **SoT mirror (Issues on):** [msmourao/polystack-devkit/issues](https://github.com/msmourao/polystack-devkit/issues)
 
 - Use these for WebKit / DevKit samples, docs site, and **NuGet package** consumption problems.
 - Platform Multicloud, Settings sidecar, and CD sources stay **private** (`polystack-framework`); consume via NuGet when published.
-- Org admin login after user→org conversion: `getpolystack-user` (needed to toggle Issues / repo admin features). Operator `msmourao` has write on brand `devkit`.
+- Org admin login after userâ†’org conversion: `getpolystack-user` (needed to toggle Issues / repo admin features). Operator `msmourao` has write on brand `devkit`.
 
 ## NuGet
 
-Current train: **`0.1.0-preview.8`** (obfuscated binaries on nuget.org)
+Current train: **`0.1.0-preview.9`** (obfuscated binaries on nuget.org)
 
 ```powershell
-dotnet add package PolyStack.Aspire.Hosting.Demo --version 0.1.0-preview.8
-dotnet add package PolyStack.Aspire.Hosting.Demo.SchemaExtraction --version 0.1.0-preview.8
-dotnet add package PolyStack.Aspire.Hosting.Demo.Host --version 0.1.0-preview.8
-dotnet add package PolyStack.Aspire.Hosting.Demo.Abstractions --version 0.1.0-preview.8
+dotnet add package PolyStack.Aspire.Hosting.Demo --version 0.1.0-preview.9
+dotnet add package PolyStack.Aspire.Hosting.Demo.SchemaExtraction --version 0.1.0-preview.9
+dotnet add package PolyStack.Aspire.Hosting.Demo.Host --version 0.1.0-preview.9
+dotnet add package PolyStack.Aspire.Hosting.Demo.Abstractions --version 0.1.0-preview.9
 ```
 
 > Package IDs use the `PolyStack.Aspire.Hosting.Demo*` prefix because `Aspire.Hosting.*` is reserved on nuget.org. Assemblies still follow the Aspire hosting naming convention.
@@ -62,18 +62,18 @@ Do not invent Multicloud CD steps from this repo alone. Config Lab on the market
 
 Open **[https://getpolystack.github.io/devkit](https://getpolystack.github.io/devkit)**. Tabs:
 
-- **Development Guide** — install, compose, export scheme
-- **Architecture** — conceptual module layout and scheme lifecycle
+- **Development Guide** â€” install, compose, export scheme
+- **Architecture** â€” conceptual module layout and scheme lifecycle
 
 Language: `?lang=en` / `?lang=pt`. Page: `?page=guide` / `?page=architecture`.
 
 ## Demo UI
 
-After AppHost `Build()`, open **http://localhost:18889/** for the Demo wizard → simplified topology (hollow motor shared with the presentation Config Lab map). Scheme/topology stay on disk under `.polystack/` (metadata only; no download in the Demo UI).
+After AppHost `Build()`, open **http://localhost:18889/** for the Demo wizard â†’ simplified topology (hollow motor shared with the presentation Config Lab map). Scheme/topology stay on disk under `.polystack/` (metadata only; no download in the Demo UI).
 
 ## Maintainers
 
-- Build docs: [`scripts/build-docs.ps1`](./scripts/build-docs.ps1) (app in `docs-page/` → output `docs/`)
+- Build docs: [`scripts/build-docs.ps1`](./scripts/build-docs.ps1) (app in `docs-page/` â†’ output `docs/`)
 - Sync public fork: [`scripts/publish-fork.ps1`](./scripts/publish-fork.ps1)
 
 See [PUBLISH.md](./PUBLISH.md).

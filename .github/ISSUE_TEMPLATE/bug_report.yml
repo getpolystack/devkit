@@ -1,4 +1,4 @@
-name: Bug report
+﻿name: Bug report
 description: Something broken in the public DevKit, samples, docs, or NuGet packages
 title: "[Bug]: "
 labels: ["bug"]
@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Public inbox for **DevKit / WebKit consumer** only.
-        Framework Multicloud / Settings / CD source stays private — consume libs via **NuGet**.
+        Framework Multicloud / Settings / CD source stays private â€” consume libs via **NuGet**.
   - type: textarea
     id: summary
     attributes:
@@ -30,7 +30,7 @@ body:
     id: packages
     attributes:
       label: Package / train version
-      placeholder: e.g. 0.1.0-preview.8
+      placeholder: e.g. 0.1.0-preview.9
   - type: textarea
     id: expected
     attributes:

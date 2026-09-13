@@ -5,10 +5,10 @@ Local-first packages for structuring PolyStack-shaped applications. Architecture
 ## Install
 
 ```powershell
-dotnet add package PolyStack.Aspire.Hosting.Demo.Host --version 0.1.0-preview.8
-dotnet add package PolyStack.Aspire.Hosting.Demo --version 0.1.0-preview.8
-dotnet add package PolyStack.Aspire.Hosting.Demo.Abstractions --version 0.1.0-preview.8
-dotnet add package PolyStack.Aspire.Hosting.Demo.SchemaExtraction --version 0.1.0-preview.8
+dotnet add package PolyStack.Aspire.Hosting.Demo.Host --version 0.1.0-preview.9
+dotnet add package PolyStack.Aspire.Hosting.Demo --version 0.1.0-preview.9
+dotnet add package PolyStack.Aspire.Hosting.Demo.Abstractions --version 0.1.0-preview.9
+dotnet add package PolyStack.Aspire.Hosting.Demo.SchemaExtraction --version 0.1.0-preview.9
 ```
 
 > NuGet package IDs use `PolyStack.Aspire.Hosting.Demo*` because `Aspire.Hosting.*` is reserved on nuget.org.

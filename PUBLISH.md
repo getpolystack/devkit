@@ -1,4 +1,4 @@
-# How to publish (maintainers)
+﻿# How to publish (maintainers)
 
 ## Docs site (build)
 
@@ -14,7 +14,7 @@ powershell -ExecutionPolicy Bypass -File scripts/build-docs.ps1
 
 ## Sync public brand (`getpolystack/devkit`)
 
-This repo (`msmourao/polystack-devkit`) is the **maintainer source of truth**. The brand public repo under **Organization** `getpolystack` is [getpolystack/devkit](https://github.com/getpolystack/devkit) (short name — org already says PolyStack). GitHub Pages: [getpolystack.github.io/devkit](https://getpolystack.github.io/devkit).
+This repo (`msmourao/polystack-devkit`) is the **maintainer source of truth**. The brand public repo under **Organization** `getpolystack` is [getpolystack/devkit](https://github.com/getpolystack/devkit) (short name â€” org already says PolyStack). GitHub Pages: [getpolystack.github.io/devkit](https://getpolystack.github.io/devkit).
 
 Both remotes remain public by design. Former brand user login (after conversion to org) is **`getpolystack-user`** (org admin). See framework `docs/DEVOPS_GITHUB.md`.
 
@@ -38,7 +38,7 @@ powershell -ExecutionPolicy Bypass -File scripts/build-docs.ps1
 powershell -ExecutionPolicy Bypass -File scripts/publish-fork.ps1
 ```
 
-If brand Issues are off: sign in as **`getpolystack-user`** → repo Settings → Features → Issues.
+If brand Issues are off: sign in as **`getpolystack-user`** â†’ repo Settings â†’ Features â†’ Issues.
 ## nuget.org Trusted Publishing field
 
 That form is **not** for the software license. Fill:
@@ -58,15 +58,15 @@ From the PolyStack monorepo:
 
 ```powershell
 $env:NUGET_API_KEY = '<nuget.org API key>'
-powershell -ExecutionPolicy Bypass -File scripts/publish-devkit.ps1 -Version 0.1.0-preview.8
+powershell -ExecutionPolicy Bypass -File scripts/publish-devkit.ps1 -Version 0.1.0-preview.9
 ```
 
 This packs the DevKit profile, stages `.nupkg` files under this repo's `packages/` folder (gitignored), and pushes to nuget.org.
 
 ## Alternate path (GitHub Release + workflow)
 
-1. Pack in the private monorepo (`scripts/pack-polystack.ps1 -Profile DevKit -Version 0.1.0-preview.8`).
-2. Create a GitHub **Release** on `getpolystack/devkit` (e.g. tag `v0.1.0-preview.8`) and attach every `.nupkg`.
+1. Pack in the private monorepo (`scripts/pack-polystack.ps1 -Profile DevKit -Version 0.1.0-preview.9`).
+2. Create a GitHub **Release** on `getpolystack/devkit` (e.g. tag `v0.1.0-preview.9`) and attach every `.nupkg`.
 3. The **Publish to nuget.org** workflow runs on release (or run it manually after placing nupkgs in `packages/`).
 4. Confirm packages on nuget.org.
 
